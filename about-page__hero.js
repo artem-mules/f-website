@@ -1,4 +1,6 @@
-let clonable__ceoInfo = document.querySelector('#clonable__ceo-info').cloneNode(true);
-let appender__ceoInfo = document.querySelector('#appender__ceo-info');
+let appenderArray__ceoInfo = document.querySelectorAll('.player-control-wrapper--about-page--append');
 
-appender__ceoInfo.append(clonable__ceoInfo);
+appenderArray__ceoInfo.forEach(el__appender => {
+    let clonable__ceoInfo = document.querySelector('#clonable__ceo-info').cloneNode(true);
+    el__appender.append(clonable__ceoInfo);
+});
