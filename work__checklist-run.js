@@ -12,12 +12,12 @@ function handler__sliderIntoView() {
             if (counter__checkBox < length__checkboxes) {
                 triggersArray__checkBoxes[counter__checkBox].click();
                 counter__checkBox = counter__checkBox + 1;
-                console.log('tick');
+                // console.log('tick');
             } else {
                 clearInterval(interval__checkboxRun);
             }
         }, 400);
-        console.log(length__checkboxes);
+        // console.log(length__checkboxes);
         // triggersArray__checkBoxes.forEach(trigger__checkBox => {
         //     setTimeout(() => {
         //         trigger__checkBox.click();
