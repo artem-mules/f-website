@@ -1,5 +1,5 @@
 //
-let array__colors = ['#FF6161', '#7BF09F', '#0A4032', '#FFFB69'];
+let array__colors = ['#FF6161', '#7BF09F', '#0A4032'];
 let data__invertTextColor = '#FFFB69';
 let data__invertLabelColor = '#0A4032';
 //–––––
@@ -25,10 +25,10 @@ array__colorItems.forEach((element__colorItem, id__colorItem) => {
             });
         } 
     });
-
-    if (colorPicker != array__colorItems.length) {
+    if (colorPicker != (array__colors.length - 1)) {
         colorPicker = colorPicker + 1;
     } else {
         colorPicker = 0;
     }
 });
+
